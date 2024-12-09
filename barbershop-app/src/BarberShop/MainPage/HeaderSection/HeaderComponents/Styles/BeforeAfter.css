@@ -1,0 +1,210 @@
+.Menu::Before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    transition: width .3s, transform .3s, background-color .2s;
+    background: #ffff;
+    width: 9px;
+    right: 23px;
+    transform: rotate(45deg);
+}
+.Menu::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    transition: width .3s, transform .3s, background-color .2s;
+    background: #ffff;
+    width: 9px;
+    right: 18px;
+    transform: rotate(-45deg);
+}
+.Menu:hover::after{
+    background: #af8c45;;
+}
+.Menu:hover::Before{
+    background: #af8c45;
+}
+.clicked::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    transition: width .3s, transform .3s, background-color .2s;
+    background: #ffff;
+    width: 12px;
+    right: 20px;
+    transform: rotate(45deg);
+}
+.clicked::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    transition: width .3s, transform .3s, background-color .2s;
+    background: #ffff;
+    width:12px;
+    right: 20px;
+    transform: rotate(-45deg);
+}
+.clicked:hover::before, .clicked:hover::after{
+    background: #ffffff;
+}
+.clicked:hover{
+    color: #ffffff;
+    background-color: #a98c51;
+}
+.OurServices::before{
+    content: '';
+    position: absolute;
+    top: 20%;
+    height: 2px;
+    background: #000000;
+    width: 12px;
+    left: 20px;
+    transform: rotate(-40deg);
+    transform-origin: left;
+}
+.OurServices::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    height: 2px;
+    background: #000000;
+    width: 12px;
+    left: 20px;
+    transform: rotate(40deg);
+    transform-origin: left;
+}
+.OurServices:hover::Before{
+    background: #af8c45;
+}
+.OurServices:hover::after{
+    background: #af8c45;
+}
+.PricesOptions::before{
+    content: '';
+    position: absolute;
+    top: 35%;
+    height: 2px;
+    background: #000000;
+    width: 12px;
+    left: 20px;
+    transform: rotate(-40deg);
+    transform-origin: left;
+}
+.PricesOptions::after{
+    content: '';
+    position: absolute;
+    top: 35%;
+    height: 2px;
+    background: #000000;
+    width: 12px;
+    left: 20px;
+    transform: rotate(40deg);
+    transform-origin: left;
+    
+}
+.PricesOptions:hover::before{
+    background: #af8c45;
+}
+.PricesOptions:hover::after{
+    background: #af8c45;
+}
+@media screen and (max-width:765px) {
+    .Menu::Before , .Menu::after{
+        display: none;
+    }
+    .X::Before{
+        content: '';
+        position: absolute;
+        top: 19px;
+        height: 3px;
+        background: #ffff;
+        width: 22px;
+        right: 23px;
+        transform: rotate(45deg);
+    }
+    .X::after{
+        content: '';
+        position: absolute;
+        top: 19px;
+        height: 3px;
+        -webkit-transition: width .3s, -webkit-transform .3s, background-color .2s;
+        -moz-transition: width .3s, -moz-transform .3s, background-color .2s;
+        transition: width .3s, transform .3s, background-color .2s;
+        background: #ffff;
+        width: 22px;
+        right: 23px;
+        transform: rotate(-45deg);
+    }
+    .PricesOptions::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        height: 3px;
+        background: #ffffff;
+        width: 16px;
+        right: 40px;
+        transform: rotate(-40deg);
+        transform-origin: right;
+    }
+    .PricesOptions::after{
+        content: '';
+        position: absolute;
+        top: 51%;
+        height: 3px;
+        background: #ffffff;
+        width: 16px;
+        right: 40px;
+        transform: rotate(40deg);
+        transform-origin: right;
+    }
+    .OurServices::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        height: 3px;
+        background: #ffffff;
+        width: 16px;
+        right: 40px;
+        transform: rotate(-40deg);
+        transform-origin: right;
+    }
+    .OurServices::before{
+        content: '';
+        position: absolute;
+        top: 51%;
+        height: 3px;
+        background: #ffffff;
+        width: 16px;
+        right: 40px;
+        transform: rotate(40deg);
+        transform-origin: right;
+    }
+
+    .BookToday::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        height: 3px;
+        background: #ffffff;
+        width: 16px;
+        right: 40px;
+        transform: rotate(-40deg);
+        transform-origin: right;
+    }
+    .BookToday::before{
+        content: '';
+        position: absolute;
+        top: 51%;
+        height: 3px;
+        background: #ffffff;
+        width: 16px;
+        right: 40px;
+        transform: rotate(40deg);
+        transform-origin: right;
+    }
+
+}

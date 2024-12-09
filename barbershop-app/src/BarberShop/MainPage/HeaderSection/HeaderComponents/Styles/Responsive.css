@@ -1,0 +1,91 @@
+@media screen and (max-width:765px) {  
+    header{
+        background-color: #ffffff;
+        position: relative;
+        margin: 0;
+        top: 0;
+        fill: #000;
+        color: #000;
+    }
+    #ResponsiveHidden{
+        display: none;
+    }
+    #ResponsiveShown{
+        display: block;
+    }
+    html{
+        background-color: rgb(83, 83, 50);
+    }
+    .logo h1{
+        font-weight: 700;
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    
+    .Menu{
+        border: 3px solid #000000;
+        color: #000;
+        padding: 0px 15px ;
+        font-size: 15px;
+        line-height: 25px;
+        margin-right: 10px;
+    }
+    .Menu::Before , .Menu::after{
+        display: none;
+    }
+    .DropDownMenu{
+        background-color: rgb(37, 37, 37);
+        color: #ffff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start ;
+    }
+    .DropDownMenu li{
+        height: fit-content;
+        z-index: 100;
+        border-bottom: 1px solid #2e2e2e;
+        width: 100%;
+        padding: 10px 40px 10px 20px;
+        cursor:default;
+        color: aliceblue;
+    }
+    .BookToday{
+        color: #af8c45;
+    }
+    .active{ 
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        transition: ease-in .6s;
+    }
+    .inactive{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-200%);
+        transition: ease-out .6s;
+    }
+    .X{
+        width: 50px;
+        cursor: pointer;
+    }
+    .DropDownMenu input{
+        background-color: #959595;
+        padding: 0px 20px;
+        border:none;
+        outline: none;
+    }
+    .DropDownMenu input::placeholder{
+        color: #ffff;
+    }
+    .PricesOptions , .OurServices , .BookToday {
+        position: relative;
+        display: inline-block;
+        width: 0;
+        height: 0;
+    }
+}
